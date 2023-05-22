@@ -1,0 +1,24 @@
+
+Setting Website
+1. Buka folder config
+2. Setting file config.php & setting.php // untuk website
+
+Setting Order
+1. Buka folder content
+2. Setting file order.php // untuk integrasi api order
+
+Setting auto status
+1. Buka folder cron
+2. Setting file status.php // untuk integrasi api status
+
+
+Setting Cronjob
+
+php -q /home/insidewe/public_html/cron/status.php >/dev/null 2>&1   //untuk status pesanan
+php -q /home/insidewe/public_html/cron/refund.php >/dev/null 2>&1   //untuk auto refund
+php -q /home/insidewe/public_html/cron/deposit.php >/dev/null 2>&1  //untuk deposit auto cancel batas waktu
+php -q /home/insidewe/public_html/cron/delete.php >/dev/null 2>&1   //untuk auto delete user saldo 0
+
+LOGIN AKUN 
+username : admin
+password : admin
